@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Strona Powitalna</title>
+</head>
+<body>
+    <h3>Witaj</h3>
+    {% for kategoria in kategorie %}
+        <p><a href="kategoria/{{ kategoria.id }}">{{ kategoria.nazwa }}</a></p>
+    {% endfor %}
+</body>
+</html>
